@@ -68,7 +68,7 @@ def route_document(name):
 
 @app.route('/raw/<name>')
 def route_raw(name):
-    filepath = f'markr/documents/{name}'
+    filepath = f'documents/{name}'
     return send_file(filepath)
 
 def safety(filename):
