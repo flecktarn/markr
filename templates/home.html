@@ -1,0 +1,26 @@
+{% extends "main.html" %}
+{% block content %}
+<h1>Index</h1>
+<div class="container mt-3">
+    <div class="row">
+        <div class="card-deck">
+
+{% if documents|length == 0 %}
+<p>no files</p>
+{% endif %}
+{% for document in documents %}
+    <div class="card mb-4 document">
+        <div class="card-body">
+            <a href = document/{{document.filename}}><b><h5 class="card-title"><b>{{document.title}}</b></h5></b></a>
+            <small class="card-text">{{document.description|safe}}</small>
+        </div>
+        <div class="card-footer">
+            <small class="text-muted">{{document.filename}}</small>
+        </div>
+    </div>
+{% endfor %}
+</div>
+</div>
+</div>
+{% endblock %}
+

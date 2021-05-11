@@ -1,0 +1,29 @@
+.navbar{
+    height: 4rem;
+    z-index: 3;
+}
+
+.backbutton{
+    margin-left: 1rem;
+}
+
+.rawbutton{
+    margin-right: 1rem;
+}
+
+.document{
+    display:inline-block !important;
+    max-width: 20rem !important; 
+    min-width: 20rem !important; 
+    margin: 0.5rem ;
+}
+
+.document .card-body{
+    min-height: 8rem !important;
+    padding-bottom: 0px !important;
+}
+
+.document .card-footer{
+    padding-top: 0.4rem;
+    padding-bottom: 0.4rem;
+}
